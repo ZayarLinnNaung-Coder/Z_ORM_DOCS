@@ -1,0 +1,20 @@
+@import "src/variable";
+
+.body-wrapper{
+  display: flex;
+  justify-content: space-between;
+  .menu-section{
+    z-index: 1;
+    width: 15%;
+    left: 0;
+    position: fixed;
+    background-color: $soft-color;
+    border-right: 1px solid #ccccccaa;
+  }
+  .content-section{
+    padding: 0 50px;
+    z-index: 2;
+    margin-left: 15%;
+    width: 85%;
+  }
+}

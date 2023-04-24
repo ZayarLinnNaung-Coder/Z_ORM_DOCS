@@ -1,1 +1,60 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400&display=swap');
+@import "variable";
+
+html, body{
+  font-family: 'Roboto Slab', serif;
+  color: $default-text-color;
+  font-size: $default-font-size;
+  margin: 0;
+  padding: 0;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+.a-link{
+  text-decoration: none;
+  padding: 3px 0;
+  color: $default-text-color;
+  &.active{
+    color: $bold-text-color;
+    border-bottom: 2px solid $primary-color;
+  }
+}
+
+.btn{
+  width: 100px;
+  height: 42px;
+  border: 0;
+  border-radius: $default-border-radius;
+  outline: none;
+  cursor: pointer;
+  &.btn-primary{
+    background-color: $primary-color;
+    color: $color;
+  }
+}
+
+h1{
+  font-size: 35px;
+}
+
+h6{
+  margin: 0;
+  border: 1px solid $primary-color;
+  background-color: $primary-dimmed-color;
+  padding: 15px;
+  border-radius: $default-border-radius;
+  font-size: $default-font-size;
+  font-weight: normal;
+}
+
+pre{
+  padding: 15px 35px;
+  line-height: 20px;
+  background-color: $soft-color;
+  color: $default-text-color;
+  border-radius: $default-border-radius;
+}

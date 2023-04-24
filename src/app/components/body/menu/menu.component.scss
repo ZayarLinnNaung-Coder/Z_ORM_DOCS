@@ -1,0 +1,25 @@
+@import "src/variable";
+.menu-section{
+  height: 100vh;
+
+  .menu-link-container{
+    padding: 20px 0 50px 50px;
+    .menu-link-group{
+      margin-bottom: 35px;
+      .menu-link-header{
+        font-weight: bold;
+      }
+      .menu-link{
+        padding: 5px 0;
+        margin: 0;
+        transition: height 0.5s, border-right 0.2s;
+        &.active{
+          color: $primary-color;
+        }
+        &.active, &:hover{
+          border-right: 5px solid $primary-color;
+        }
+      }
+    }
+  }
+}

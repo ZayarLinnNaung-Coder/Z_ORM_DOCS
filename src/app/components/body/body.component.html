@@ -1,0 +1,8 @@
+<div class="body-wrapper">
+  <div class="menu-section">
+    <app-menu [docsMapArray]="data" (content)="onContentEmit($event)"></app-menu>
+  </div>
+  <div class="content-section">
+    <app-content [content]="content"></app-content>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<section class="menu-section">
+  <div class="menu-link-container">
+    <div class="menu-link-group" *ngFor="let docsMap of docsMapArray; let i = index">
+      <p class="menu-link-header">{{docsMap.key}}</p>
+      <p class="menu-link" *ngFor="let docs of docsMap.values; let j = index" [ngClass]="{'active' : i == 0 && j == 0}"
+         (click)="onClickMenuLink(docs, $event)">{{docs.title}}</p>
+    </div>
+
+  </div>
+</section>
