@@ -31,8 +31,45 @@ header{
           justify-content: right;
           text-align: right;
           padding-left: 65px;
+          &.menuIconLi{
+            display: none;
+          }
         }
       }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header{
+    .header-wrapper {
+      margin: 0 2.5rem !important;
+
+      .link-div {
+        .link-ul {
+          display: flex;
+          list-style-type: none;
+
+          li {
+            padding-left: 35px !important;
+            &.menuIconLi{
+              display: flex;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  header {
+
+    margin: 0 5px;
+
+    .header-wrapper {
+      margin: 0 1rem !important;
     }
   }
 }

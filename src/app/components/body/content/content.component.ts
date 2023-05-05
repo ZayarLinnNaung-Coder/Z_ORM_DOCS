@@ -14,13 +14,12 @@ export class ContentComponent implements OnInit, OnChanges{
 
   ngOnInit(): void {
     this.contentfulService.getFirstContent().subscribe((content: string) => {
-      this.content = content.replace("code>", "pre>");
-      console.log(this.content)
+      this.content = content.replaceAll("code>", "pre>");
     })
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    this.content = changes['content'].currentValue.replace("code>", "pre>");
+    this.content = changes['content'].currentValue.replaceAll("code>", "pre>");
   }
 
 

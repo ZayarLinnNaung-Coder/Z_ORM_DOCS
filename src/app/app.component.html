@@ -1,4 +1,4 @@
 <div class="x">
-  <app-header></app-header>
-  <app-body></app-body>
+  <app-header (toggleSideMenuEvent)="onClickSideMenu($event)"></app-header>
+  <app-body [events]="clickSideMenuSubject.asObservable()"></app-body>
 </div>

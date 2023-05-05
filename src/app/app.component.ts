@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {Subject} from "rxjs";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'z_orm_docs';
+
+  clickSideMenuSubject: Subject<void> = new Subject<void>();
+
+  onClickSideMenu($event: void) {
+    this.clickSideMenuSubject.next();
+  }
 }

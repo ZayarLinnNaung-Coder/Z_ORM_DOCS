@@ -15,7 +15,8 @@ export class ContentfulService {
   })
 
   private filterQuery = {
-    content_type: CONFIG.contentTypeIds.zOrmDocs
+    content_type: CONFIG.contentTypeIds.zOrmDocs,
+    order: 'sys.createdAt'
   };
 
   getDocs(): Observable<any>{

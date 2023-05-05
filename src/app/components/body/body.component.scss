@@ -18,3 +18,39 @@
     width: 85%;
   }
 }
+
+
+@media only screen and (max-width: 768px) {
+
+
+  .menu-section {
+    left: -50% !important;
+    transition: 0.5s;
+    &.active{
+      left: 0% !important;
+      width: 50% !important;
+      background-color: $soft-color !important;
+    }
+  }
+
+  .content-section{
+    padding: 0 2.5rem !important;
+    z-index: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+
+  .menu-section {
+    left: -75% !important;
+    &.active{
+      width: 75% !important;
+    }
+  }
+
+  .content-section{
+    padding: 0 1rem !important;
+  }
+}

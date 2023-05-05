@@ -8,6 +8,7 @@ import { BodyComponent } from './components/body/body.component';
 import { MenuComponent } from './components/body/menu/menu.component';
 import { ContentComponent } from './components/body/content/content.component';
 import {ContentfulService} from "./service/contentful.service";
+import {IconsModule} from "./icons/icons.module";
 
 @NgModule({
   declarations: [
@@ -17,10 +18,11 @@ import {ContentfulService} from "./service/contentful.service";
     MenuComponent,
     ContentComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        IconsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

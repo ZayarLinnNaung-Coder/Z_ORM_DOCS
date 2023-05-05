@@ -1,5 +1,5 @@
 @import "src/variable";
-.menu-section{
+.menu{
   height: 100vh;
 
   .menu-link-container{
@@ -10,7 +10,8 @@
         font-weight: bold;
       }
       .menu-link{
-        padding: 5px 0;
+        font-size: 13px;
+        padding: 7px 0;
         margin: 0;
         transition: height 0.5s, border-right 0.2s;
         &.active{
